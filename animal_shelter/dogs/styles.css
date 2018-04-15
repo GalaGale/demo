@@ -314,12 +314,20 @@ a.button_gallery_inactive {
 }
 
 .footer .contact, .footer .location {
-    width: 270px;
     float: left;
+}
+
+.footer .contact {
+    width: 270px;
     margin-right: 140px;
 }
 
+.footer .location {
+    width: 320px;
+}
+
 .footer ul {
+    display: table;
     /* margin-top: 12px; */
     /* border: 1px solid #f1cdb3; */
     /* background-color: #f1cdb3; */
@@ -331,13 +339,35 @@ a.button_gallery_inactive {
 .footer li {
     list-style-type: none;
     /* list-style-image: url(images/credit-card.png); */
-    margin-left: 40px;
-    padding-left: 5px;
+    /* margin-left: 40px; */
+    /* padding-left: 5px; */
     font: 20px "Times New Roman", serif;
     color: #f1cdb3;
+    /* display: inline-table; */
     vertical-align: middle;
+    margin-left: -20px;
+    padding-bottom: 30px;
+    display: table-row;
 }
 
-.footer li {
-    list-style-type: url(images/envelope.png);
+/* .footer  li:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+} */
+
+.footer li p {
+    display: inline;
+    vertical-align: top;
+    /* line-height: 45px; */
+}
+
+.footer li img {
+    padding-right: 15px;
+}
+
+.footer li:last-child {
+    /* list-style-type: url(images/envelope.png); */
+    padding-bottom: 0;
 }
